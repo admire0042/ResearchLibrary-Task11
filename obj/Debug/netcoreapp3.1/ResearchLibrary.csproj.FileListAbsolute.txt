@@ -1,0 +1,13 @@
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.csprojAssemblyReference.cache
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.AssemblyInfoInputs.cache
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.AssemblyInfo.cs
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.exe
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.deps.json
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.runtimeconfig.json
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.runtimeconfig.dev.json
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.dll
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\bin\Debug\netcoreapp3.1\ResearchLibrary.pdb
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.dll
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.pdb
+C:\Users\Olusoji\Desktop\Codebits-Academy\lab-tasks\lab-task11\ResearchLibrary\obj\Debug\netcoreapp3.1\ResearchLibrary.genruntimeconfig.cache
