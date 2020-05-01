@@ -38,7 +38,7 @@ namespace ResearchLibrary
 
             Console.WriteLine("\nCURRENT LIST OF DEFAULTERS(PROCESSED POLYMORPHICALLY)");
 
-             GenericDefaulterList<IDefaulterList> library = new GenericDefaulterList<IDefaulterList>(); 
+             GenericDefaulterList<Library> library = new GenericDefaulterList<Library>(); 
 
 
                                 
@@ -51,9 +51,10 @@ namespace ResearchLibrary
              library.Add(library7);  
              
 
-             foreach(var lib in library.GetAllDefaulters()){
+             foreach(var lib in library){
                      Console.WriteLine(lib);
-             }
+             
+              }
         }
     }
 }

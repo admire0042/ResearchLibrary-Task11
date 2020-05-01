@@ -1,31 +1,37 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 namespace ResearchLibrary
 {
-    public class GenericDefaulterList<T> where T : IDefaulterList
+    public class GenericDefaulterList<T> : IEnumerable where T : IDefaulterList 
     {
-        private T[] defaulter;
-        private int numElements;
-        private const int DEFAULTSIZE = 7;
+        List<Library> library = new List<Library>();
+        // private T[] defaulter;
+        // private int numElements;
+        // private const int DEFAULTSIZE = 7;
 
         public  GenericDefaulterList()
         {
-            defaulter = new T[DEFAULTSIZE];
-            numElements = 0;
+            // defaulter = new T[DEFAULTSIZE];
+            // numElements = 0;
         }
 
-         public  GenericDefaulterList(int size)
+        //  public  GenericDefaulterList(int size)
+        // {
+        //     defaulter = new T[size];
+        //     numElements = 0;
+        // }
+        public void Add(Library item)
         {
-            defaulter = new T[size];
-            numElements = 0;
-        }
-        public void Add(T item)
-        {
-            if(numElements < defaulter.Length)
-            {
-                defaulter[numElements] = item;
-                numElements++;
-            }else{
-                throw new System.Exception("Defaulter list is full!");
-            }
+            library.Add(item);
+
+            // if(numElements < defaulter.Length)
+            // {
+            //     defaulter[numElements] = item;
+            //     numElements++;
+            // }else{
+            //     throw new System.Exception("Defaulter list is full!");
+            // }
         }
 
         // public T Remove()
@@ -38,22 +44,20 @@ namespace ResearchLibrary
         //     throw new System.Exception("Payment collection is empty");
         // }
 
-        // public Enumerator GetEnumerator()
-        // {
-        //     foreach(T item in payments)
-        //     {
-        //         yield return item;
-        //     }
-        // }
-
-        public T[] GetAllDefaulters()
+        public IEnumerator GetEnumerator()
         {
-            if(numElements > 0)
-            {
-                return defaulter;
-            }
-            throw new System.Exception("DefaulterList is empty!");
+           return library.GetEnumerator();
         }
+
+        // public T[] GetAllDefaulters()
+        // {
+
+        //     if(numElements > 0)
+        //     {
+        //         return defaulter;
+        //     }
+        //     throw new System.Exception("DefaulterList is empty!");
+        // }
 
     }
 }
