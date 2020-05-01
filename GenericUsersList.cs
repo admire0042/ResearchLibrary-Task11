@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 namespace ResearchLibrary
 {
-    public class GenericDefaulterList<T> : IEnumerable where T : IDefaulterList 
+    public class GenericUsersList<T> : IEnumerable where T : IDefaulterList 
     {
-        List<Library> library = new List<Library>();
-
-       
-        public void Add(Library item)
+        List<LibGenList> library = new List<LibGenList>();
+        
+        public void Add(LibGenList item)
         {
             library.Add(item);
         }

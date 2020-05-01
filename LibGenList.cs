@@ -1,7 +1,7 @@
 using System;
 namespace ResearchLibrary
 {
-    public class Library : IDefaulterList
+    public class LibGenList : IDefaulterList
     {
         public Student StudentDetails { get; set; }
         public Book BookDetails { get; set; }
@@ -11,7 +11,7 @@ namespace ResearchLibrary
         public int ExpectedRetDate;
         public double NumOfDaysRet;
 
-        public Library(Student stdDetails, Book bookDetails, string dateIss, string dateRet)
+        public LibGenList(Student stdDetails, Book bookDetails, string dateIss, string dateRet)
         {
            
                StudentDetails = stdDetails;
@@ -73,11 +73,9 @@ namespace ResearchLibrary
 
         public override string ToString()
         {
-            // return $"{GetAllStudents()}";
-            return $"{GetDefaulter()}";
+            return $"{GetAllStudents()}";
+            // return $"{GetDefaulter()}";
         }
-
-        
 
     }
 }
