@@ -5,10 +5,10 @@ namespace ResearchLibrary
 {
     public class GenericDefaulterList<T> : IEnumerable where T : IDefaulterList 
     {
-        List<Library> library = new List<Library>();
+        List<T> library = new List<T>();
 
        
-        public void Add(Library item)
+        public void Add(T item)
         {
             library.Add(item);
         }

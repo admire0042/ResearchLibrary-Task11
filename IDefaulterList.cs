@@ -6,7 +6,7 @@ namespace ResearchLibrary
          string GetYear();
          string GetBook();
          string GetDateIssue();
-         string GetDateReturn();
+         double GetDateReturn();
          string GetDefaulter();
     }
 }

@@ -7,9 +7,7 @@ namespace ResearchLibrary
         public Book BookDetails { get; set; }
         public string IssueDate { get; set; }
         public string ReturnDate { get; set; }
-        public int IssDate;
-        public int ExpectedRetDate;
-        public double NumOfDaysRet;
+        
 
         public Library(Student stdDetails, Book bookDetails, string dateIss, string dateRet)
         {
@@ -41,24 +39,26 @@ namespace ResearchLibrary
             return $"{IssueDate}";
         }
 
-         public string GetDateReturn()
+         public double GetDateReturn()
         {
        
                     System.DateTime IssDate = Convert.ToDateTime(IssueDate);
-                     System.DateTime ExpectedRetDate = IssDate.AddDays(+14);
+                    System.DateTime ExpectedRetDate = IssDate.AddDays(+14);
                     TimeSpan DateDifferent = ExpectedRetDate - IssDate;
                     double Days = DateDifferent.TotalDays;
                     System.DateTime RetDate = Convert.ToDateTime(ReturnDate);
                     TimeSpan DateReturnedDifferent = RetDate - IssDate;
-                    NumOfDaysRet = DateReturnedDifferent.TotalDays;
+                    double NumOfDaysRet = DateReturnedDifferent.TotalDays;
                     
-                    return  $"{ReturnDate}";
+                    return  NumOfDaysRet;
         
         }
         public string GetDefaulter()
         {
-            GetDateReturn();
+            double NumOfDaysRet = GetDateReturn();
+            
             if(NumOfDaysRet > 14){
+                
                 return $"Name: {GetName()}\nBook Borrowed: {GetBook()} \n ";
             }
             return $"";
@@ -67,17 +67,7 @@ namespace ResearchLibrary
 
          public string GetAllStudents()
         {
-             GetDateReturn();
-            return $"Name: {GetName()}\nYear:{GetYear()}\nBook Borrowed: {GetBook()}\nDate Issued: {GetDateIssue()}\nDate Returned: {GetDateReturn()}\n";
+            return $"Name: {GetName()}\nYear:{GetYear()}\nBook Borrowed: {GetBook()}\nDate Issued: {GetDateIssue()}\nDate Returned: {ReturnDate}\n";
         }
-
-        public override string ToString()
-        {
-            // return $"{GetAllStudents()}";
-            return $"{GetDefaulter()}";
-        }
-
-        
-
     }
 }
